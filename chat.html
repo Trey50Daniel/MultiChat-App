@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+
+<html lang="en" >
+	<head>
+		<meta charset="UTF-8">
+		<title>Vimm.TV - Multi chat tool</title>
+		<link rel='stylesheet' href="./static/v2/dist/css/style.min.css">
+		<!-- <link rel='stylesheet' href="/static/v2/dist/css/dashboard1.css"> -->
+		<link rel='stylesheet' href="./static/v2/dist/css/custom.css">
+		<link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+		<link rel="stylesheet" href="./static/multichat/style.css">
+        <script src="https://cdn.socket.io/4.1.2/socket.io.min.js" integrity="sha384-toS6mmwu70G0fw54EGlWWeA4z3dyJ+dlXBtSURSKN4vyRFOcxd3Bzjj/AoOwY+Rg" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div id="chat"></div>
+
+		<!-- JS -->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+		<script src='https://github.com/tmijs/tmi.js/releases/download/v1.5.0/tmi.min.js'></script>
+		<script src='https://twemoji.maxcdn.com/2/twemoji.min.js?2.3.0'></script>
+		<script src="./static/js/reconnecting-websocket.js"></script>
+		<script type="text/javascript">
+			/*
+			Select the channels to join
+			*/
+			const vimmname = "trey50daniel"; // Set this to connect to your Vimm chat.
+			const steem_id = "trey50daniel"; // Set this to track gem donations.
+            const trovo_name = "trey50daniel";
+			const twitchname = "trey50daniel"; // Set this to connect to your Twitch chat.
+            const elocast_name = 'trey50daniel';
+			const mixername = ""; // Set this to connect to your Mixer chat.
+			const youtube_video_id = ""
+			const discordwebhook = ""; // Set this to send all messages to a discord channel.
+			const fontsize = "18";
+			const fontcolor = "FFFFFF";
+			/*
+			Other settings
+			*/
+			const fade = 0;
+
+			if(fontsize){
+				$("body").css("font-size", fontsize + "px");
+			}
+			if(fontcolor){
+				$("body").css("color", "#" + fontcolor);
+			}
+		</script>
+		<!-- <script  src="/static/multichat/discord.js?t=1627225541"></script> -->
+		<script  src="./static/multichat/twitch.js?t=1627225541"></script>
+		<script  src="./static/multichat/vimm.js?t=1627225541"></script>
+        <script type="module" src="./lib/js/ElocastWrapper.js"></script>
+		<!-- <script  src="/static/multichat/mixer.js?t=1627225541"></script>
+		<script  src="/static/multichat/youtube.js?t=1627225541"></script> -->
+	</body>
+</html>
